@@ -64,6 +64,7 @@ public class Teste {
          objEstoque.setQuant_produto_disp(270);
          
          //Informações Venda
+         System.out.println("_____________________________________");
          System.out.println("Insira Data que a Venda foi realizada: ");
          String data_venda = entrada.next();
          objVenda.setData_venda(data_venda);
