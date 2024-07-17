@@ -11,7 +11,7 @@ package banco;
  */
 public class ContaCorrente  extends Conta{
    @Override
-   void atualiza(double taxa) {
+   public void atualiza(double taxa) {
     super.deposita(this.saldo * (taxa*2));
 }
    @Override

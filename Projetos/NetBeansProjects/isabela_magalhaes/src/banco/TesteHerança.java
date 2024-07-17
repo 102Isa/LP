@@ -11,9 +11,9 @@ package banco;
  */
 public class TesteHerança {
     public static void main(String[] args) {
-        Funcionario objFuncionario = new Funcionario();
-        Gerente objGerente = new Gerente();
-        Supervisor objSupervisor = new Supervisor();
+        Funcionario objFuncionario = new Gerente("Roberto", "Gerente", 4000, "24/05", "15896");
+        Gerente objGerente = new Gerente("tulio", "Gerente", 4000, "24/05", "12345");
+        Supervisor objSupervisor = new Supervisor("Livia", "supervisor", 2000, "24/05", "1234");
         
         objFuncionario.setSalario(1000);
         objGerente.setSalario(1000);

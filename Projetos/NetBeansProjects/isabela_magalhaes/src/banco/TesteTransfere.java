@@ -11,8 +11,8 @@ package banco;
  */
 public class TesteTransfere {
     public static void main(String[] args) {
-        Conta minhaConta = new Conta();
-        Conta outraConta = new Conta();
+        Conta minhaConta = new ContaCorrente();
+        Conta outraConta = new ContaCorrente();
         minhaConta.deposita(1000);
         outraConta.deposita(1000);
         

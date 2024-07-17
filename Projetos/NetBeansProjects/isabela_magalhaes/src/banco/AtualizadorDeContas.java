@@ -10,7 +10,7 @@ package banco;
  * @author 16771606678
  */
 public class AtualizadorDeContas extends Conta {
-    Conta c = new Conta();
+    Conta c = new ContaCorrente();
     private double saldoTotal = 0;
     private double selic;
      AtualizadorDeContas(double selic) {
@@ -43,6 +43,11 @@ public class AtualizadorDeContas extends Conta {
 
     public void setSelic(double selic) {
         this.selic = selic;
+    }
+
+    @Override
+    public void atualiza(double taxa) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

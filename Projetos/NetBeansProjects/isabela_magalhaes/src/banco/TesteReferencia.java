@@ -11,7 +11,7 @@ package banco;
  */
 public class TesteReferencia {
     public static void main(String[] args) {
-        Conta conta1 = new Conta();
+        Conta conta1 = new ContaCorrente();
         Cliente cliente1 = new Cliente();
        // conta1.objCliente = cliente1;
         

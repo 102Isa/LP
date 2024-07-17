@@ -10,11 +10,11 @@ package banco;
  * @author 16771606678
  */
 public class ContaPoupanca extends Conta{
-    
-   
+
     @Override
-   void atualiza(double taxa) {
-    super.deposita(this.saldo * (taxa*3));
-}
+    public void atualiza(double taxa) {
+     
+    }
+    
     
 }

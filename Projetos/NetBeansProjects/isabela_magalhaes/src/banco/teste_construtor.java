@@ -11,7 +11,7 @@ package banco;
  */
 public class teste_construtor {
     public static void main(String[] args) {
-        Conta c1 = new Conta();
+        Conta c1 = new ContaCorrente();
         Conta c2 = new Conta(10000);
         Conta c3 = new Conta(9000, 10000, 12356);
         

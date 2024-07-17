@@ -10,14 +10,21 @@ package banco;
  * @author 16771606678
  */
 public class TesteFuncionario {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         
-        Funcionario f1 = new Funcionario(null, null, 0, null, null);
-
-        f1.setNome("cleber");
-        f1.setSalario(2500);
-
-        f1.mostra();
-    }
+    
+   Funcionario objFuncionario = new Gerente("tulio", "Gerente", 4000, "24/05", "12345");
+        Funcionario objFuncionario2 = new Supervisor("Livia", "supervisor", 2000, "24/05", "1234");
+       
+      //  objFuncionario.setNome("João");
+      // objFuncionario2.setNome("Maria");
+       
+       objFuncionario.setSalario(10000);
+       objFuncionario.bonifica(1000);
+       objFuncionario.demite();
+       
+       objFuncionario.mostra();
+       objFuncionario2.mostra();
+}
     
 }

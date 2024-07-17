@@ -12,8 +12,8 @@ package banco;
 public class TesteConta {
     
     public static void main(String[] args) {
-        Conta c1 = new Conta();
-        Conta c2 = new Conta(); 
+        Conta c1 = new ContaCorrente();
+        Conta c2 = new ContaCorrente(); 
         c1.deposita(3000.50);
         c2.deposita(100000);
         c1.objCliente.setNomeCliente("Pedro");

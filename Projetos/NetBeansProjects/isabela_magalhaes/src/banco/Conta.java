@@ -9,7 +9,7 @@ package banco;
  *
  * @author 16771606678
  */
-public class Conta {
+public abstract class Conta {
    private int numero;
    double saldo;
    private double limite;
@@ -93,7 +93,7 @@ public class Conta {
          //this.saldo = this.saldo -quantidade;
         // destino.saldo = destino.saldo + quantidade;   
     }
-   void atualiza(double taxa) {
-    this.saldo += this.saldo * taxa;
-}
+   public abstract void atualiza(double taxa);
+  
+
 }
