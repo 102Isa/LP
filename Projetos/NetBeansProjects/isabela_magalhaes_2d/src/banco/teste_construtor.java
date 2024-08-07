@@ -12,17 +12,17 @@ package banco;
 public class teste_construtor {
     public static void main(String[] args) {
         Conta c1 = new ContaCorrente();
-        Conta c2 = new Conta(10000);
-        Conta c3 = new Conta(9000, 10000, 12356);
+        //Conta c2 = new Conta(10000);
+        //Conta c3 = new Conta(9000, 10000, 12356);
         
         System.out.println("Saldo c1:"+c1.getSaldo());
-        System.out.println("Saldo c2:"+c2.getSaldo());
-        System.out.println("Saldo c3:"+c3.getSaldo());
+        //System.out.println("Saldo c2:"+c2.getSaldo());
+       // System.out.println("Saldo c3:"+c3.getSaldo());
         System.out.println("Total de contas: "+Conta.getTotalDeContas());
         
         System.out.println("ID c1: "+c1.getIdentificador());
-        System.out.println("ID c2: "+c2.getIdentificador());
-        System.out.println("ID c3: "+c3.getIdentificador());
+        //System.out.println("ID c2: "+c2.getIdentificador());
+       // System.out.println("ID c3: "+c3.getIdentificador());
       
     }
     

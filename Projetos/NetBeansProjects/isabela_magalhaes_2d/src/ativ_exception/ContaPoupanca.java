@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package banco;
+package ativ_exception;
+
+import banco.*;
 
 /**
  *
@@ -12,7 +14,12 @@ package banco;
 public class ContaPoupanca extends Conta{
 
     @Override
-    public void atualiza(double taxa) {
+    public void deposita(double valor) {
+         if(valor<0){
+           throw new IllegalArgumentException("Você tentou depositar um valor negativo!");
+       }else{
+           this.saldo+= valor-0.10;
+       }
      
     }
     

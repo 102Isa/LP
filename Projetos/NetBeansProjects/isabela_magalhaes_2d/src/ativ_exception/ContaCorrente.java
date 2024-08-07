@@ -3,23 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package banco;
+package ativ_exception;
+
+import banco.*;
 
 /**
  *
  * @author 16771606678
  */
-public class ContaCorrente  extends Conta{
-   @Override
-   public void atualiza(double taxa) {
-    super.deposita(this.saldo * (taxa*2));
+
+
+public class ContaCorrente extends Conta {
+
+    @Override
+    void deposita(double valor) {
+        if (valor < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.saldo += valor - 0.10;
+        }
+    }
+
 }
-   @Override
-       public void deposita (double valor){
-           super.deposita(valor-1);
-       } 
-    
-   
-}
+
     
 
