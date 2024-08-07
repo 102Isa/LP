@@ -3,23 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hospital;
+package banco;
 
 /**
  *
  * @author 16771606678
  */
-public class Medico {
-    private String nomeMedico;
+public class ContaPoupanca extends Conta{
 
-    public String getNomeMedico() {
-        return nomeMedico;
+    @Override
+    public void atualiza(double taxa) {
+     
     }
-
-    public void setNomeMedico(String nomeMedico) {
-        this.nomeMedico = nomeMedico;
-    }
-    
     
     
 }
